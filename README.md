@@ -1,9 +1,13 @@
 # image_meta_data_extraction
+The Indian Ocean Tuna Commission ([IOTC](http://www.iotc.org/)) requires each of it's member countries to properly regulate and document as much catch as possible from long line fishing. These fisheries usually catch species such as Yellowfin Tuna (*Thunnus albacares*), Mackerel Tuna (*Euthynnus affinis*), Sailfish and Swordfish species. The high value of these catches requires rigorous documentation including information on catch date, time, geolocation, vessel data, catch gear used and morphometrics.
+In order to better comply with these standards, the Department of Fisheries issued a waterproof point and shoot camera to a long line fishing vessel and requested the crew to take photographs of each catch. The author volunteered to help extract the meta data stored in these images that will help conforming to the [IOTC catch reporting standards](http://iotc.org/sites/default/files/documents/data/Guidelines%20Data%20Reporting%20IOTC.pdf).
+This repository contains code and associated files that were written by the author to help extract the date, time, and geolocation of images that will be taken by these vessles. This is still in development stage and more comprehensive testing and rewriting of the code will be required.
+
 Over the next few weeks I will be adding some modules and codes that I will be using to extract some metadata from a set of images that were captured using a Nikon Coolpix W300 point and shoot camera.
 
 ## Requirements
 1. Python 3.4+
-2. PIL (Pillow) - pip install pillow
+2. PIL (Python Imaging Library) - pip install pillow
 
 ## Meta data that's stored in an image taken using a Nikon Coolpix W300
 The following list has been extracted using the script named 'meta_data_description.py'
