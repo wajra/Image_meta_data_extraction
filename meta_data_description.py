@@ -1,7 +1,10 @@
+# This script contains 2 methods that each function very similar to one another to provide different results
+# The major goal is extract metadata from images captured using dedicated cameras for use in scientific studies
+
 import os
-import sys
 from PIL import Image, ExifTags
 import argparse
+
 
 # This method returns a dictionary of all meta data descriptors with the meta data associated to them
 def extract_meta_data(image_path):
@@ -11,6 +14,7 @@ def extract_meta_data(image_path):
         return exif
     else:
         return 0
+
 
 # This method returns just a list of the meta data tags of an image. Doesn't return the associated meta
 # data itself
